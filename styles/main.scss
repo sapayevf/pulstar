@@ -21,11 +21,13 @@ header {
   margin-bottom: 80px;
 }
 
-header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 40px;
+header {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
 }
 
 .header__logo {
@@ -133,9 +135,6 @@ header .container {
   }
 
   .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,6 +180,88 @@ header .container {
       font-size: 12px;
       text-align: center;
       color: #3f3b3d;
+    }
+  }
+}
+
+.section-2 {
+  margin-bottom: 60px;
+  .s2__cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+    .s2__cards-item {
+      position: relative;
+      width: 32.3%;
+      height: 400px;
+      background-image: url(../assets/images/egg-image.png);
+      background-size: cover;
+      background-position: center;
+      background-position: center;
+      &:hover {
+        background-size: 110%;
+      }
+      .s2__cards-item-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        left: 12px;
+        bottom: 12px;
+        right: 12px;
+        border-top: 1px solid #3f3b3d6d;
+        padding-top: 10px;
+        .egg {
+          font-size: 12px;
+          text-transform: uppercase;
+          color: #3f3b3d;
+        }
+        .s2-price {
+          font-size: 12px;
+          color: #3f3b3d;
+        }
+      }
+    }
+    .bomb {
+      background-image: url(../assets/images/bomb-img.png);
+      background-size: cover;
+      background-position: center;
+    }
+    .pineapple {
+      background-image: url(../assets/images/pineapple-img.png);
+      background-size: cover;
+      background-position: center;
+    }
+    .s2__cards-item2 {
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      width: 49%;
+      height: 450px;
+      background-image: url(../assets/images/shop-all.png);
+      background-size: cover;
+      background-position: center;
+      &:hover {
+        background-size: 110%;
+      }
+      .s2__cards-item-title2 {
+        margin-bottom: 25px;
+        &:first-child {
+          color: white;
+          font-size: 38px;
+          text-align: center;
+        }
+        .Explore {
+          font-size: 14px;
+        }
+      }
+    }
+    .browse-colc {
+      background-image: url(../assets/images/browse-collection.png);
+      background-size: cover;
+      background-position: center;
     }
   }
 }
