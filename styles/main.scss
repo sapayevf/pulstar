@@ -265,3 +265,70 @@ header {
     }
   }
 }
+
+.s3__content {
+  padding: 0 124px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 200px;
+}
+
+.s3__content-cards {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 60px;
+  .s3__content-cards-img {
+    width: 48%;
+    img {
+      width: 100%;
+    }
+  }
+  .s3__content-cards-content {
+    width: 48%;
+    height: 553px;
+    object-fit: cover;
+    background-color: #dceae9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .best-templates {
+      text-align: center;
+      padding: 0 64px;
+      color: #3f3b3d;
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
+    .trustpilot {
+      font-size: 12px;
+      color: #3f3b3d;
+    }
+  }
+}
+
+.s3__preview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 120px;
+  .s3__preview-item {
+    width: 24%;
+    img {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 18px;
+    }
+    p {
+      color: #3f3b3d;
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+}
