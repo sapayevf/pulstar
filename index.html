@@ -3,11 +3,146 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./styles/main.css" />
     <title>Pulstar</title>
   </head>
   <body>
-    
+    <header>
+      <div class="container">
+        <div class="header__logo">
+          <img class="header__logo-img" src="./assets/images/logo.png" alt="" />
+        </div>
+        <div class="header__content">
+          <nav class="header__nav">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Journal</a>
+            <a href="">Shop</a>
+            <a href="">Contact</a>
+          </nav>
+          <div class="header__btns">
+            <button class="buy-template">Buy Template</button>
+            <button class="shop-logo">
+              <img src="./assets/icons/korzinka.svg" alt="" /><img
+                src=""
+                alt=""
+              />
+              <img class="0-img" src="./assets/icons/0_img.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-1">
+        <div class="container">
+          <div class="s1__content">
+            <div class="s1__content-title">
+              <h1>Shop hundreds of enamel pins from artists.</h1>
+              <div class="s1__content-btns">
+                <button class="primary-button">Shop everything</button>
+                <button class="primary-button browse-btn">
+                  Browse collections
+                </button>
+              </div>
+            </div>
+            <div class="s1__carousel">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <img
+                    class="swiper-slide"
+                    src="./assets/images/s1__carousel-img.png"
+                    alt=""
+                  />
+                  <img
+                    class="swiper-slide"
+                    src="./assets/images/s1__carousel-img.png"
+                    alt=""
+                  />
+                  <img
+                    class="swiper-slide"
+                    src="./assets/images/s1__carousel-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <p
+            style="
+              color: #f14814;
+              text-align: center;
+              font-size: 12px;
+              margin-top: 78px;
+              margin-bottom: 16px;
+              letter-spacing: 2px;
+            "
+          >
+            Ready, Set, Go
+          </p>
+          <p
+            style="
+              text-align: center;
+              font-size: 27px;
+              letter-spacing: 2px;
+              line-height: 35px;
+              margin: 0 270px;
+              color: #3f3b3d;
+              margin-bottom: 60px;
+            "
+          >
+            Shop hundreds of enamel pins from artists. The best cool pin badges
+            to decorate your backpack, denim jean jacket, lapel, and festival
+            hat for sale in our online store.
+          </p>
+          <div class="s1__cards">
+            <div class="s1__card">
+              <img src="./assets/images/wake-happen.png" alt="" />
+              <h2>Free Artwork</h2>
+              <p>Free digital proofs and best design advice</p>
+            </div>
+            <div class="s1__card">
+              <img src="./assets/images/yeah.png" alt="" />
+              <h2>Lower Minimum</h2>
+              <p>You can always start with 50 pcs here</p>
+            </div>
+            <div class="s1__card">
+              <img src="./assets/images/bang.png" alt="" />
+              <h2>100% Guarantee</h2>
+              <p>Get excellent pins or have your money back</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
