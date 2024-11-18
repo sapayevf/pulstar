@@ -1,5 +1,5 @@
 @import url(./other_styles/fonts.css);
-
+@import url(./other_styles/__mixins.scss);
 * {
   margin: 0;
   padding: 0;
@@ -23,9 +23,7 @@ header {
 
 header {
   .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex-box(flex, center, space-between);
     margin-top: 40px;
   }
 }
@@ -37,13 +35,9 @@ header {
 }
 
 .header__content {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+  @include flex-box2(flex, center, 40px);
   .header__nav {
-    display: flex;
-    align-items: center;
-    gap: 40px;
+    @include flex-box2(flex, center, 40px);
     transition: all 0.3s ease;
     @media (max-width: 768px) {
       display: none;
@@ -58,9 +52,7 @@ header {
 }
 
 .header__btns {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+  @include flex-box2(flex, center, 40px);
   .buy-template {
     padding: 14px 18px;
     border: none;
@@ -74,9 +66,7 @@ header {
   }
   .shop-logo {
     padding: 12px 18px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+    @include flex-box2(flex, center, 5px);
     background-color: #f8f9fa;
     border-radius: 4px;
     border: none;
@@ -126,9 +116,7 @@ header {
     }
   }
   .s1__content-btns {
-    display: flex;
-    align-items: center;
-    gap: 6px;
+    @include flex-box2(flex, center, 6px);
     .browse-btn {
       background-color: #3f3b3d;
     }
@@ -150,9 +138,7 @@ header {
   }
 
   .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-box(flex, center, center);
   }
 
   .swiper-slide img {
@@ -188,9 +174,7 @@ header {
 .s1__cards {
   width: 70%;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  gap: 32px;
+  @include flex-box2(flex, center, 32px);
   @media (max-width: 650px) {
     flex-direction: column;
   }
@@ -231,10 +215,8 @@ header {
   margin-bottom: 60px;
   .s2__cards {
     width: 100;
-    display: flex;
-    align-items: center;
+    @include flex-box2(flex, center, 15px);
     flex-wrap: wrap;
-    gap: 15px;
     margin-bottom: 15px;
     @media (max-width: 970px) {
       width: 100%;
@@ -265,9 +247,7 @@ header {
         background-size: 110%;
       }
       .s2__cards-item-title {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex-box(flex, center, space-between);
         position: absolute;
         left: 12px;
         bottom: 12px;
@@ -296,9 +276,7 @@ header {
       background-position: center;
     }
     .s2__cards-item2 {
-      display: flex;
-      justify-content: center;
-      align-items: end;
+      @include flex-box(flex, end, center);
       width: 49%;
       height: 450px;
       background-image: url(../assets/images/shop-all.png);
@@ -347,10 +325,8 @@ h1 {
 
 .s3__content-cards {
   margin: 0 auto;
-  display: flex;
-  align-items: stretch;
+  @include flex-box2(flex, center, 15px);
   flex-wrap: wrap;
-  gap: 15px;
   margin-bottom: 60px;
   @media (max-width: 910px) {
     flex-direction: column;
@@ -380,9 +356,7 @@ h1 {
     width: 48%;
     flex: 1;
     background-color: #dceae9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-box(flex, center, center);
     flex-direction: column;
     @media (max-width: 910px) {
       margin: 0 auto;
@@ -408,10 +382,8 @@ h1 {
 
 .s3__preview {
   width: 100%;
-  display: flex;
-  align-items: center;
+  @include flex-box2(flex, center, 15px);
   flex-wrap: wrap;
-  gap: 15px;
   margin-bottom: 120px;
 
   .s3__preview-item {
@@ -434,9 +406,7 @@ h1 {
 
 .section-4 {
   .container {
-    display: flex;
-    align-items: center;
-    gap: 50px;
+    @include flex-box2(flex, center, 50px);
     @media (max-width: 950px) {
       flex-direction: column;
     }
@@ -527,9 +497,7 @@ h1 {
   gap: 20px;
   .s4__journal-card {
     width: 90%;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    @include flex-box2(flex, center, 20px);
     img {
       width: 30%;
       @media (max-width: 950px) {
@@ -557,9 +525,7 @@ h1 {
 
 .footer__imgs {
   width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 30px;
+  @include flex-box2(flex, center, 30px);
   img {
     width: 23%;
     @media (max-width: 750px) {
@@ -608,9 +574,7 @@ h1 {
   }
   .footer__links {
     width: 40%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-box(flex, center, space-between);
     @media (max-width: 750px) {
       margin: 0 auto;
       width: 80%;

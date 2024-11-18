@@ -1,4 +1,5 @@
 @import url(./other_styles/fonts.css);
+@import url(./other_styles/__mixins.scss);
 * {
   margin: 0;
   padding: 0;
