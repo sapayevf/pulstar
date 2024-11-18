@@ -45,6 +45,9 @@ header {
     align-items: center;
     gap: 40px;
     transition: all 0.3s ease;
+    @media (max-width: 768px) {
+      display: none;
+    }
     a {
       color: #3f3b3d;
       &:hover {
@@ -82,6 +85,9 @@ header {
     &:hover {
       background-color: #dddbda;
     }
+    @media (max-width: 500px) {
+      display: none;
+    }
   }
 }
 
@@ -114,6 +120,10 @@ header {
       font-size: 32px;
       margin-bottom: 30px;
     }
+    @media (max-width: 850px) {
+      display: block;
+      margin: 0 auto;
+    }
   }
   .s1__content-btns {
     display: flex;
@@ -132,6 +142,11 @@ header {
     top: -15px;
     width: 50%;
     height: 120%;
+    @media (max-width: 900px) {
+      position: static;
+      margin-top: 400px;
+      margin: 0 auto;
+    }
   }
 
   .swiper-slide {
@@ -157,17 +172,39 @@ header {
   }
 }
 
+.s1__title {
+  text-align: center;
+  font-size: 27px;
+  letter-spacing: 2px;
+  line-height: 35px;
+  margin: 0 270px;
+  color: #3f3b3d;
+  margin-bottom: 60px;
+  @media (max-width: 955px) {
+    margin: 0 30px;
+  }
+}
+
 .s1__cards {
   width: 70%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   gap: 32px;
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
   .s1__card {
     width: 30%;
+    @media (max-width: 650px) {
+      width: 100%;
+    }
     img {
       display: block;
       margin: 0 auto;
+      @media (max-width: 650px) {
+        width: 70%;
+      }
     }
     h2 {
       font-size: 20px;
@@ -175,11 +212,17 @@ header {
       text-align: center;
       color: #3f3b3d;
       margin-bottom: 12px;
+      @media (max-width: 650px) {
+        font-size: 30px;
+      }
     }
     p {
       font-size: 12px;
       text-align: center;
       color: #3f3b3d;
+      @media (max-width: 650px) {
+        font-size: 20px;
+      }
     }
   }
 }
@@ -187,11 +230,19 @@ header {
 .section-2 {
   margin-bottom: 60px;
   .s2__cards {
+    width: 100;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
     margin-bottom: 15px;
+    @media (max-width: 970px) {
+      width: 100%;
+      margin: 0 auto;
+    }
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
     .s2__cards-item {
       position: relative;
       width: 32.3%;
@@ -200,6 +251,16 @@ header {
       background-size: cover;
       background-position: center;
       background-position: center;
+      @media (max-width: 970px) {
+        width: 28%;
+      }
+      @media (max-width: 835px) {
+        height: 200px;
+      }
+      @media (max-width: 600px) {
+        width: 80%;
+        height: 350px;
+      }
       &:hover {
         background-size: 110%;
       }
@@ -243,6 +304,11 @@ header {
       background-image: url(../assets/images/shop-all.png);
       background-size: cover;
       background-position: center;
+      @media (max-width: 600px) {
+        width: 80%;
+        height: 350px;
+        margin-top: 15px;
+      }
       &:hover {
         background-size: 110%;
       }
@@ -268,6 +334,9 @@ header {
 
 .s3__content {
   padding: 0 124px;
+  @media (max-width: 910px) {
+    padding: 0;
+  }
 }
 
 h1 {
@@ -279,31 +348,56 @@ h1 {
 .s3__content-cards {
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
   gap: 15px;
   margin-bottom: 60px;
+  @media (max-width: 910px) {
+    flex-direction: column;
+  }
   .s3__content-cards-img {
     width: 48%;
+    flex: 1;
     img {
+      @media (max-width: 910px) {
+        display: block;
+        margin: 0 auto;
+      }
+      width: 90%;
+    }
+    @media (max-width: 910px) {
+      margin: 0 auto;
+      width: 80%;
+      align-items: stretch;
+    }
+    @media (max-width: 910px) {
+      margin: 0 auto;
       width: 100%;
+      align-items: stretch;
     }
   }
   .s3__content-cards-content {
     width: 48%;
-    height: 553px;
-    object-fit: cover;
+    flex: 1;
     background-color: #dceae9;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    @media (max-width: 910px) {
+      margin: 0 auto;
+      width: 90%;
+    }
     .best-templates {
       text-align: center;
       padding: 0 64px;
       color: #3f3b3d;
       font-size: 24px;
       margin-bottom: 25px;
+
+      @media (max-width: 910px) {
+        font-size: 20px;
+      }
     }
     .trustpilot {
       font-size: 12px;
@@ -313,11 +407,13 @@ h1 {
 }
 
 .s3__preview {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 15px;
   margin-bottom: 120px;
+
   .s3__preview-item {
     width: 24%;
     img {
@@ -330,6 +426,9 @@ h1 {
       text-align: center;
       font-size: 18px;
     }
+    @media (max-width: 1000px) {
+      width: 45%;
+    }
   }
 }
 
@@ -338,6 +437,9 @@ h1 {
     display: flex;
     align-items: center;
     gap: 50px;
+    @media (max-width: 950px) {
+      flex-direction: column;
+    }
   }
 }
 
@@ -348,6 +450,9 @@ h1 {
   background-position: center;
   width: 48%;
   height: 650px;
+  @media (max-width: 950px) {
+    width: 90%;
+  }
   .s4__content-title {
     padding: 32px;
     position: absolute;
@@ -355,6 +460,7 @@ h1 {
     left: 15px;
     bottom: 15px;
     background-color: white;
+
     .data-text {
       text-align: center;
     }
@@ -397,6 +503,9 @@ h1 {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  @media (max-width: 950px) {
+    width: 90%;
+  }
 }
 
 .s4__journal-title {
@@ -423,6 +532,9 @@ h1 {
     gap: 20px;
     img {
       width: 30%;
+      @media (max-width: 950px) {
+        width: 40%;
+      }
     }
     .s4__journal-card-title {
       .data-text {
@@ -437,4 +549,86 @@ h1 {
   }
 }
 
+.main_footer {
+  padding-top: 120px;
+  padding-bottom: 30px;
+  background-color: #3f3b3d;
+}
 
+.footer__imgs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  img {
+    width: 23%;
+    @media (max-width: 750px) {
+      margin: 0 auto;
+      width: 48%;
+    }
+    @media (max-width: 500px) {
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+    }
+  }
+  margin-bottom: 64px;
+  @media (max-width: 750px) {
+    flex-wrap: wrap;
+  }
+}
+
+.f-a {
+  display: block;
+  color: white;
+  margin-bottom: 6px;
+}
+
+.footer__content {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  @media (max-width: 750px) {
+    flex-wrap: wrap;
+  }
+  gap: 90px;
+  margin-bottom: 40px;
+  .footer__content-title {
+    width: 50%;
+    p {
+      color: white;
+      font-size: 20px;
+      padding-bottom: 120px;
+      border-bottom: 1px white solid;
+    }
+    @media (max-width: 750px) {
+      margin: 0 auto;
+      width: 80%;
+    }
+  }
+  .footer__links {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 750px) {
+      margin: 0 auto;
+      width: 80%;
+    }
+  }
+}
+
+.footer__last {
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 500px) {
+    margin: 0 auto;
+    width: 80%;
+    flex-direction: column;
+  }
+  .f-a {
+    @media (max-width: 500px) {
+      margin-bottom: 20px;
+    }
+  }
+}
