@@ -38,7 +38,7 @@ header {
   @include flex-box2(flex, center, 40px);
   .header__nav {
     @include flex-box2(flex, center, 40px);
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
     @media (max-width: 768px) {
       display: none;
     }
